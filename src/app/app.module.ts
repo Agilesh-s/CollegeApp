@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { AddStudentComponent } from './add-student/add-student.component';
+import { AddFacultyComponent } from './add-faculty/add-faculty.component';
 
 const appRoutes:Routes=[
   {
@@ -19,6 +20,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addstudent",component:AddStudentComponent
+  },
+  {
+    path:"addfaculty",component:AddFacultyComponent
   }
 ]
 
@@ -28,7 +32,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     LoginComponent,
     DashboardComponent,
-    AddStudentComponent
+    AddStudentComponent,
+    AddFacultyComponent
   ],
   imports: [
     BrowserModule,
